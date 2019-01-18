@@ -19,7 +19,7 @@ router.post("/search/weather", (req,res,next)=>{
   request.get(searchURL, (error, response, body)=>{
     const parsedData = JSON.parse(body);
     console.log(parsedData);
-    res.render("index", {
+    res.render("weatherInformation", {
       parsedData: parsedData.results,
       name: parsedData.name,
       temperature: parsedData.main.temp,

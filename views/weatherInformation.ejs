@@ -15,13 +15,18 @@
   <div class="main-container">
     <div class="title"><h1>Express Weather App</h1></div>
     <%include search%>
-  </div>
+    <div class="weatherInformation">
+        <div class="weatherIcon"><img src="http://openweathermap.org/img/w/<%=iconId%>.png"></div>
+        <div class="weatherText">
+            <div class="cityName">City Name: <%=name%></div>
+            <div class="cityTemp">Current Temp: <%=temperature%></div>
+        </div>
+    </div>
+    </div>
 
 
-  <div class="footer">Footer</div>
-  <script src="/config.js"></script>
-  <script src="/javascripts/scripts.js"></script>
+<div class="footer">Footer</div>
+<script src="/config.js"></script>
+<script src="/javascripts/scripts.js"></script>
 </body>
 </html>
-
-<!-- Add in navbar and footer -->
